@@ -21,9 +21,6 @@ public class UI_Title : UI_Scene
         BindButton(typeof(Buttons));
         BindImage(typeof(Images));
 
-        //GetButton((int)Buttons.Start_Btn).onClick.AddListener(() =>
-        //{
-        //    Managers.Scene.LoadScene(Define.Scenes.Main);
-        //});
+        
     }
 }

@@ -7,23 +7,23 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagerEx
 {
-    //public BaseScene CurrentScene => UnityEngine.Object.FindObjectOfType<BaseScene>();
+    public BaseScene CurrentScene => UnityEngine.Object.FindObjectOfType<BaseScene>();
 
-    //public void LoadScene(Define.Scenes scene)
-    //{
-    //    Managers.Clear();
+    public void LoadScene(Define.Scenes scene)
+    {
+        //Managers.Clear();
 
-    //    SceneManager.LoadScene(GetSceneName(scene));
-    //}
+        SceneManager.LoadScene(GetSceneName(scene));
+    }
 
-    //private string GetSceneName(Define.Scenes scene)
-    //{
-    //    string sceneName = System.Enum.GetName(typeof(Define.Scenes), scene);
-    //    return sceneName;
-    //}
+    private string GetSceneName(Define.Scenes scene)
+    {
+        string sceneName = System.Enum.GetName(typeof(Define.Scenes), scene);
+        return sceneName;
+    }
 
-    //public void Clear()
-    //{
-    //    CurrentScene.Clear();
-    //}
+    public void Clear()
+    {
+        CurrentScene.Clear();
+    }
 }
